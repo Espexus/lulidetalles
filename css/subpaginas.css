@@ -39,7 +39,27 @@ body {
     width: 30%;
     font-size: 1.4em;
     margin: 4% auto;
+    text-align: center;
 
     background-color: white;
     color: var(--rosa);
+}
+
+/* estilos responsive */
+@media (min-width: 1024px) {
+    .flex-3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .item-flex {
+        flex: 0 0 28%;
+        margin-bottom: 5%;
+    }
+    .boton-invertido-centrado {
+        width: 10%;
+    }
 }

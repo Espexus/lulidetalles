@@ -43,6 +43,7 @@ header {
 /* estilos para el menu del header */
 nav {
     display: flex;
+    justify-content: center;
     align-self: stretch;
 }
 .enlace-menu {
@@ -73,7 +74,8 @@ nav {
     transition: all ease 0.3s;
 }
 .idiomas p:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* estilos generales del main */
@@ -178,6 +180,9 @@ h3 {
     font-size: 1.2em;
     text-decoration: none;
 }
+.enlace-normalizado:hover {
+    cursor: pointer;
+}
 
 /* estilos para el formulario */
 form {
@@ -203,7 +208,11 @@ select {
     padding: 2px;
 }
 .boton-formulario {
-    display: inline-block;
+    display: block;
+    margin: 4% auto;
+    width: 30%;
+    text-align: center;
+
     text-decoration: none;
     color: white;
     background-color: var(--rosa);
@@ -220,4 +229,66 @@ footer {
     background-color: var(--rosa);
     padding: 2% 0;
     font-size: 0.8em;
+}
+
+/* zona para los estilos responsive */
+@media(min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+    .enlace-menu {
+        padding: 0 10%;
+    }
+    .enlace-menu:hover {
+        font-size: 1.3em;
+    }
+    .espacio-logo-menu {
+        height: 90%;
+    }
+    .hero {
+        height: 60vh;
+    }
+    h1 {
+        font-size: 7em;
+    }
+
+    .horizontal-flex {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+    }
+    .horizontal-flex p {
+        margin-bottom: 0;
+        flex: 0 0 40%;
+        text-align: justify;
+    }
+    .horizontal-flex img {
+        width: 30%;
+    }
+
+    iframe {
+        display: block;
+        width: 40%;
+        margin-bottom: 0;
+    }
+
+    .horizontal-flex-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    label {
+        font-size: 1em;
+    }
+    input, select {
+        font-size: 0.8em;
+    }
+    .boton-formulario {
+        width: 10%;
+        font-size: 1.4em;
+    }
 }
