@@ -202,6 +202,16 @@ select {
     font-size: 1.1em;
     padding: 2px;
 }
+.boton-formulario {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--rosa);
+    font-size: 1.2em;
+    padding: 6px;
+    border-radius: 2px;
+    box-shadow: 0 0 15px var(--rosa-claro);
+}
 
 /* css de mi footer */
 footer {

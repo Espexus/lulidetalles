@@ -1,0 +1,45 @@
+:root {
+    --rosa: rgb(255, 161, 177);
+}
+body {
+    background-color: var(--rosa);
+}
+
+/* estilos de los items del flex */
+.flex-3 {
+    width: 80%;
+    margin: 0 auto;
+}
+.item-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 10%;
+}
+.item-flex img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.item-flex p {
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    background-color: white;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.boton-invertido-centrado {
+    display: block;
+    width: 30%;
+    font-size: 1.4em;
+    margin: 4% auto;
+
+    background-color: white;
+    color: var(--rosa);
+}
