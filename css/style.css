@@ -175,7 +175,7 @@ h3 {
     box-sizing: border-box;
     border-bottom: 1px solid white;
     color: var(--blanco);
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
@@ -191,7 +191,7 @@ form {
     gap: 20px;
 }
 label {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: monospace;
 }
 input {
@@ -202,9 +202,12 @@ select {
     font-size: 1.1em;
     padding: 2px;
 }
+
+/* css de mi footer */
 footer {
     text-align: center;
     color: white;
     background-color: var(--rosa);
     padding: 2% 0;
+    font-size: 0.8em;
 }
